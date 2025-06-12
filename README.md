@@ -1,4 +1,4 @@
-Netflix Clone 🎬
+## Netflix Clone 🎬
 
 A simple front-end **Netflix clone** built using **HTML** and **CSS**. This project replicates the UI of Netflix's homepage, showcasing responsive layout, sections like banners, cards, and navigation — all built without any frameworks.
 
