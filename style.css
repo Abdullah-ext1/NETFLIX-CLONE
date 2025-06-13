@@ -11,15 +11,16 @@ body {
 
 .main {
     background: url("assets/bg1.jpeg");
-    height: 80vh;
+    height: 70vh;
     background-position: center center;
+    
     position: relative;
     background-repeat: no-repeat;
     background-size: max(1200px, 100vw)
 }
 
 .box {
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     background-color: black;
     opacity: 0.66;
@@ -85,7 +86,7 @@ nav img {
 }
 
 .text {
-    height: 100%;
+    height: calc(100% - 94px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -101,6 +102,7 @@ nav img {
 .first {
     font-weight: 900;
     font-size: 48px;
+    max-width: 800px;
 }
 
 .second {
@@ -113,17 +115,11 @@ nav img {
     font-size: 15px;
 }
 
-.input {
+.inputs {
     display: flex;
-    
-    
-    
 }
 
-.input input {
-    align-items: center;
-    display: flex;
-    flex-wrap: column;
+.inputs input {
     padding: 15px 10px;
     border-radius: 2px;
     border: 1px solid #867e7e;
@@ -143,12 +139,68 @@ nav img {
     cursor: pointer;
     margin: 8px;
     font-size: 23px;
-    display: flex;
-    align-items: center;
-    flex-wrap: column;
-
 }
 
 .get-started:hover {
     background-color: #9b0505;
 }
+@media (max-width: 768px) {
+    .main {
+        height: 80vh;
+        background-size: cover;
+    }
+
+    .box {
+        height: 80vh;
+    }
+
+    nav {
+        max-width: 90vw;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .text{
+        line-height:  1.1;
+       
+    
+    }
+
+    .text .first {
+        font-size: 32px;
+        line-height: 1.2;
+    }
+
+    .text .second {
+        font-size: 18px;
+    }
+
+    .text .third {
+        font-size: 13px;
+    }
+
+    .inputs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inputs input,
+    .get-started {
+        width: 50vw;
+        max-width: 350px;
+        font-size: 14px;
+        padding: 8px 6px;
+    }
+
+    nav img {
+        width: 110px;
+
+    }
+    
+}
+.sepration {
+    width: 100%;
+    height: 2px;
+    background-color: #867e7e;
+    margin: 20px 0;
+}
+
