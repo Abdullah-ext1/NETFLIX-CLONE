@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-*{margin: 0;
-padding: 0;}
-body{
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
     background-color: black;
 }
-.main{
-    background: url("assets/bg1.jpeg") ;
+
+.main {
+    background: url("assets/bg1.jpeg");
     height: 80vh;
     background-position: center center;
     position: relative;
     background-repeat: no-repeat;
-    background-size: max(1200px , 100vw)
-    
+    background-size: max(1200px, 100vw)
 }
+
 .box {
     height: 80vh;
     width: 100%;
@@ -21,35 +26,43 @@ body{
     position: absolute;
     top: 0;
 }
+
 .main nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    padding:  10px;
+
 }
+
 nav ul {
     display: flex;
     list-style: none;
 }
+
 span img {
     width: 50px;
     height: 50px;
 }
-nav{
+
+nav {
     align-items: center;
     display: flex;
     max-width: 60vw;
     margin: auto;
     justify-content: space-between;
-;
+    ;
 }
-nav img{
+
+nav img {
     width: 154px;
     position: relative;
     z-index: 10;
 
 }
-.select{ z-index: 10;
+
+.select {
+    z-index: 10;
     position: relative;
 }
 
@@ -58,14 +71,20 @@ nav img{
     position: relative;
     z-index: 10;
     background-color: #b70000;
-    color : white;
-    padding: 6px 14px;
+    color: white;
+    padding: 8px 15px;
     margin: 10px;
     border-radius: 5px;
     border: none;
     font-weight: bold;
+    cursor: pointer;
 }
-.text{
+
+.main nav button:hover {
+    background-color: #9b0505;
+}
+
+.text {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -78,20 +97,58 @@ nav img{
     text-align: center;
     padding: 0 20px;
 }
- .first{
+
+.first {
     font-weight: 900;
-    font-size: 48px;    
+    font-size: 48px;
 }
-.second{
+
+.second {
     font-weight: 600;
     font-size: 24px;
 }
-.third{
+
+.third {
     font-weight: 500;
     font-size: 15px;
 }
-.input{
+
+.input {
     display: flex;
+    
+    
+    
+}
+
+.input input {
+    align-items: center;
+    display: flex;
+    flex-wrap: column;
+    padding: 15px 10px;
+    border-radius: 2px;
+    border: 1px solid #867e7e;
+    background-color: transparent;
+    width: 300px;
+    color: white;
+    margin: 8px;
+}
+
+.get-started {
+    background-color: #b70000;
+    color: rgb(255, 255, 255);
+    padding: 15px 60px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 8px;
+    font-size: 23px;
+    display: flex;
+    align-items: center;
+    flex-wrap: column;
 
 }
 
+.get-started:hover {
+    background-color: #9b0505;
+}
